@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #7eead8e3; */
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+    /* color: #333; */
+    color: white;
+    margin-top: 20px;
+
+    position: relative;
+    text-decoration-color: #e85d5d;
+}
+
+h2::after {
+    content: "";
+    width: 130px;
+    height: 4px;
+    background-color: #8958e4;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* #inputtask {
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    /* display: block; */
+
+/* #displayItem{
+    width: 100%;
+    
+} */
+#displayItem {
+    width: 85%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #8958e4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* box-shadow:  4px 4px 6px rgba(76, 74, 74, 0.955); */
+    box-shadow: 4px 6px 12px #8958e4;
+}
+
+#addtodo:hover {
+    background-color: #5c639f;
+}
+
+.task {
+    width: 95%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 8px;
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+    /* color: rgb(224, 224, 52); */
+    color: white;
+    font-weight: 700;
+
+}
+
+.edtbtn {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#editBtn{
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#deleteBtn{
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#deleteBtn:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+
+}
+
+#editBtn:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+#addtodo {
+    width: 140px;
+    padding: 10px;
+    margin: 0 auto;
+    /* display: block; */
+    background-color: #4CAF50;
+    display: flex;
+
+    align-items: center;
+    gap: 5px;
+    justify-content: space-around;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#duedate {
+    width: 150px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    /* display: block; */
+}
+
+#inputtask {
+    border: none;
+    width: 220px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+    /* display: block; */
+}
+
+.allbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    visibility: hidden;
+    min-width: 110px;
+    margin-left: -125px;
+    /* background-color: rgb(46, 46, 46); */
+    background-color: rgb(32, 172, 32);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 7px;
+    position: fixed;
+    z-index: 1;
+    right: 5%;
+    top: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        right: 0%;
+        opacity: 0;
+    }
+
+    to {
+        right: 5%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        right: 0%;
+        opacity: 0;
+    }
+
+    to {
+        right: 5%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        right: 5%;
+        opacity: 1;
+    }
+
+    to {
+        right: 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        right: 5%;
+        opacity: 1;
+    }
+
+    to {
+        right: 0%;
+        opacity: 0;
+    }
+}

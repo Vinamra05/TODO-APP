@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST </title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div id="snackbar"><span class="material-symbols-outlined">
+    task_alt
+    </span><span>Todo Saved</span></div>
+   <h2>TODO APP </h2>
+   <div class="allbtn"> 
+
+     <input id="inputtask"   type="text" placeholder="ENTER YOUR TASK HERE...">
+     <input type="date" id="duedate">
+     <button id="addtodo" onclick="addTodo()"><span class="material-symbols-outlined">
+      add_task
+      </span><span>ADD TASK</span></button>
+   </div>
+
+   <div id="displayItem">
+    
+   </div>
+  <script src="todo.js"></script>
+</body>
+</html>

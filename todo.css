@@ -84,6 +84,7 @@ h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 #deleteBtn{
     padding: 5px;
@@ -94,6 +95,7 @@ h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #deleteBtn:hover {
@@ -129,6 +131,7 @@ h2::after {
     padding: 10px;
 
     border-radius: 10px;
+    cursor: pointer;
     border: none;
     /* display: block; */
 }
@@ -139,6 +142,7 @@ h2::after {
     padding: 10px;
    
     border-radius: 5px;
+    cursor: pointer;
     /* display: block; */
 }
 

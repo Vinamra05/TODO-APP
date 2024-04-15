@@ -109,7 +109,7 @@ h2::after {
 #addtodo {
     width: 140px;
     padding: 10px;
-    margin: 0 auto;
+
     /* display: block; */
     background-color: #4CAF50;
     display: flex;
@@ -126,7 +126,7 @@ h2::after {
 #duedate {
     width: 150px;
     padding: 10px;
-    margin: 0 auto;
+
     border-radius: 10px;
     border: none;
     /* display: block; */
@@ -136,7 +136,7 @@ h2::after {
     border: none;
     width: 220px;
     padding: 10px;
-    margin: 20px auto;
+   
     border-radius: 5px;
     /* display: block; */
 }
@@ -145,7 +145,11 @@ h2::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 4px;
+    width: 85%;
+    margin: auto;
+    gap: 2rem;
+    
+    
 
 }
 
@@ -234,5 +238,39 @@ h2::after {
     to {
         right: 0%;
         opacity: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .allbtn{
+        width: 70%;       
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    #inputtask{
+        width: 100%;
+    }
+    #duedate{
+        width: 100%;
+    }
+    
+    .task span:nth-child(2) {
+        font-size: 10px;
+    }
+    .task span:nth-child(3){
+        font-size: 9px;
+    }
+    #deleteBtn{
+        width: 15px;
+        height: 15px;
+    }
+    #editBtn{
+        width: 15px;
+        height: 15px;
+    }
+    .edtbtn{
+        gap: 4px;
     }
 }

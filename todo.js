@@ -14,7 +14,7 @@ const displayItem = () => {
         console.log(elem)
         html += `<div class="task">
 
-        <span >${i+1}</span>
+        <span >${i + 1}</span>
      <span >${elem.todo}</span>
      <span>${elem.dueDate}</span>
      <div class="edtbtn">
@@ -73,15 +73,16 @@ const addTodo = () => {
     // Add the "show" class to DIV
     x.className = "show";
     // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 1000);
 
 
 
-    task="";
-    date="";
+    task = "";
+    date = "";
     displayItem()
 
 }
+
 
 
 function main() {
@@ -89,7 +90,7 @@ function main() {
     const res = JSON.parse(str)
     // console.log(res)
     if (res)
-        todos.push(...res);     
+        todos.push(...res);
 
     displayItem();
 
@@ -103,6 +104,7 @@ function main() {
         // console.log(date) 
     })
 
+    
 
 }
 

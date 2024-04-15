@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+ 
     padding: 0;
     /* background-color: #7eead8e3; */
     background-color: black;
@@ -124,7 +125,7 @@ h2::after {
 }
 
 #duedate {
-    width: 150px;
+    width: 30%;
     padding: 10px;
 
     border-radius: 10px;
@@ -134,7 +135,7 @@ h2::after {
 
 #inputtask {
     border: none;
-    width: 220px;
+    width: 40%;
     padding: 10px;
    
     border-radius: 5px;
